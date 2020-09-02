@@ -1,0 +1,26 @@
+
+.section{
+    padding: 0 20px;
+    &-header{
+        @include flex-justify-center(row);
+        padding: 5px 0;
+        border-bottom: solid 1px darken($grey, 20%);
+        &_title{
+            font-weight: fontWeight('regular');
+            font-size: 1.5rem;
+            padding: 5px;
+            margin: 0;
+        }
+        &_actions{
+            @include flex-justify-center(row);
+        }
+    }
+}
+
+.page-contents{
+    margin-top: 20px;
+}
+
+.mobile-nav{
+    display: none;
+}

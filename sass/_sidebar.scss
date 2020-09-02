@@ -1,0 +1,75 @@
+.nav{
+    background: $content-bg;
+    height: calc(100vh - 53px);
+    box-shadow: 2px 2px 6px 1px #ccc;
+    
+    &-menu{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+        &_item{
+            border-bottom: solid 1px grey;
+            border-left: solid 3px transparent;
+            display: block;
+            transition: all 0.3s ease-in-out;
+            &.active{
+                border-left: solid 3px $secondary;
+                font-weight: fontWeight(medium);
+                .nav-menu_link:after{
+                    transform: rotate(180deg);
+                }
+                .sub-menu{
+                    display: block !important;
+                    font-weight: fontWeight(regular);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            .sub-menu{
+                display: none;
+                list-style: none;
+                border-top: solid 1px $grey;
+                transition: all 0.4s ease-in-out;
+                &-item{
+                    border-bottom: 1px solid $grey;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+                &-link{
+                    font-size: .85rem;
+                    color: $text-color;
+                    padding: 5px;
+                    display: block;
+                    &:hover{
+                        text-decoration: none;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        &_link{
+            color: $text-color;
+            padding: 10px 15px;
+            font-size: .9rem;
+            width: 100%;
+            display: inline-block;
+            &:hover{
+                text-decoration: none;
+                color: $primary;
+            }
+            &--text{
+                margin-left: 5px;
+            }
+           
+            &.has-submenu{
+                @include flex-justify-center(row);
+                &:after{
+                    content: "\e907";
+                    font-family: 'vector-icons';
+                }
+            }
+        }
+    }
+}

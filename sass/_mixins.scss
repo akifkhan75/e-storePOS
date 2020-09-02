@@ -1,0 +1,41 @@
+$font-weight: (
+    'regular': 400,
+    'medium': 500,
+    'bold': 700
+);
+
+@function fontWeight($weight) {
+    @return map-get($font-weight,$weight);
+}
+
+@mixin flex-justify-center($direction) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($primary, 100%);
+        color: darken($text-color, 100%);
+    }
+}
+
+@mixin small {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin large {
+    @media (max-width: 768px){
+        @content;
+    }
+}

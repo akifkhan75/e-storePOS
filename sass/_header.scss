@@ -1,0 +1,41 @@
+
+.header{
+    background: $primary;
+    @include flex-justify-center(row);
+    border-bottom: solid 2px $secondary;
+    #{&}-logo{
+        padding: 0 15px;
+        color: lighten($text-color, 100%);
+    }
+    .nav-button{
+        width: 35px;
+        height: 100%;
+        padding: 10px;
+        i{
+            color: lighten($text-color, 100%);
+        }
+    }
+    #{&}-nav{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        &_link{
+            padding: 14px;
+            color: lighten($text-color, 100%);
+            @include flex-justify-center(row);
+            &--text{
+                margin: 0 10px;
+                font-size: .9rem;
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &_link--current-user{
+            @extend .header-nav_link;
+            background: $primary-dark;
+        }
+    }
+}
