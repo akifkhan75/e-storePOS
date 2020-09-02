@@ -13,7 +13,7 @@ let eStores = {
                 this.classList.toggle('active');
             })
         }
-
+        // toggle sidebar
         const navButton = document.querySelector('.nav-button');
         const sideNav = document.querySelector('.nav');
         navButton.addEventListener('click',(event) => {
