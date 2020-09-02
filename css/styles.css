@@ -11,7 +11,8 @@
   .header .nav-button {
     width: 35px;
     height: 100%;
-    padding: 10px; }
+    padding: 10px;
+    display: none; }
     .header .nav-button i {
       color: white; }
   .header .header-nav {
@@ -166,6 +167,8 @@
   display: none; }
 
 @media (max-width: 768px) {
+  .nav-button {
+    display: block; }
   .nav {
     position: absolute;
     left: -200px;
@@ -214,7 +217,9 @@
       height: 60px; }
   .section-header {
     flex-direction: column;
-    align-items: stretch; } }
+    align-items: stretch; }
+  .card {
+    margin-bottom: 1rem; } }
 
 body {
   padding: 0;

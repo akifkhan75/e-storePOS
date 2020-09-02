@@ -2,6 +2,7 @@ let eStores = {
     init: function(){
         this.sidebar();
         this.dropdowns();
+        this.readBarCode();
     },
     sidebar: function(){
         let navLink = document.querySelectorAll('.nav-menu_item');
@@ -40,6 +41,29 @@ let eStores = {
             // })
         }
     },
+    readBarCode: function() {
+        Quagga.init({
+            inputStream : {
+              name : "Live",
+              type : "LiveStream",
+              target: document.querySelector('#scanner')    // Or '#yourElement' (optional)
+            },
+            decoder : {
+              readers : ["code_128_reader"]
+            }
+          }, function(err) {
+              if (err) {
+                  console.log(err);
+                  return
+              }
+              console.log("Initialization finished. Ready to start");
+              Quagga.start();
+          });
+
+          Quagga.onDetected(function(data){
+              console.log(data)
+          })
+    }
 }
 
 eStores.init();

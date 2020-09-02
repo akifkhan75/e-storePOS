@@ -1,4 +1,7 @@
 @include small {
+    .nav-button{
+        display: block;
+    }
     .nav{
         position: absolute;
         left: -200px;
@@ -50,5 +53,8 @@
     .section-header{
         flex-direction: column;
         align-items: stretch;
+    }
+    .card{
+        margin-bottom: 1rem;
     }
 }
