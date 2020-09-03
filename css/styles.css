@@ -196,6 +196,8 @@
       left: 0;
       visibility: visible;
       width: 250px; }
+  .input-group .form-control:focus {
+    width: auto; }
   .mobile-nav {
     display: flex;
     justify-content: space-between;

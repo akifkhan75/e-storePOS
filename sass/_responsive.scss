@@ -15,6 +15,9 @@
         }
     }
 
+    .input-group .form-control:focus{
+        width: auto;
+    }
     .mobile-nav{
         @include flex-justify-center(row);
         background: lighten($text-color, 100%);
