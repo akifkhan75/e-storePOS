@@ -17,12 +17,7 @@
     }
 
     .chart-container_sm{
-        .chart-label{
-            font-size: .9rem;
-            font-weight: fontWeight(medium);
-            color: $text-color;
-            margin-bottom: 0;
-        }
+        
         .chart-result{
             display: flex;
             align-items: center;

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'vector-icons';
-  src:  url('../fonts/vector-icons.eot?h3acqx');
-  src:  url('../fonts/vector-icons.eot?h3acqx#iefix') format('embedded-opentype'),
-    url('../fonts/vector-icons.ttf?h3acqx') format('truetype'),
-    url('../fonts/vector-icons.woff?h3acqx') format('woff'),
-    url('../fonts/vector-icons.svg?h3acqx#vector-icons') format('svg');
+  src:  url('../fonts/vector-icons.eot?u3cwsi');
+  src:  url('../fonts/vector-icons.eot?u3cwsi#iefix') format('embedded-opentype'),
+    url('../fonts/vector-icons.ttf?u3cwsi') format('truetype'),
+    url('../fonts/vector-icons.woff?u3cwsi') format('woff'),
+    url('../fonts/vector-icons.svg?u3cwsi#vector-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,8 +28,17 @@
 .icon-contact_phone:before {
   content: "\e947";
 }
+.icon-speaker_phone:before {
+  content: "\e950";
+}
 .icon-how_to_reg:before {
   content: "\e948";
+}
+.icon-rotate_left:before {
+  content: "\e951";
+}
+.icon-rotate_right:before {
+  content: "\e952";
 }
 .icon-store_mall_directory:before {
   content: "\e949";
@@ -42,6 +51,9 @@
 }
 .icon-done_all:before {
   content: "\e94c";
+}
+.icon-fingerprint:before {
+  content: "\e953";
 }
 .icon-switch_account:before {
   content: "\e94d";
@@ -60,6 +72,15 @@
 }
 .icon-align-right:before {
   content: "\e902";
+}
+.icon-arrow-down:before {
+  content: "\e954";
+}
+.icon-arrow-up:before {
+  content: "\e955";
+}
+.icon-award:before {
+  content: "\e956";
 }
 .icon-bell:before {
   content: "\e903";
@@ -253,6 +274,9 @@
 .icon-truck1:before {
   content: "\e941";
 }
+.icon-pencil:before {
+  content: "\e957";
+}
 .icon-paste:before {
   content: "\e942";
 }
@@ -273,4 +297,7 @@
 }
 .icon-stats-dots:before {
   content: "\e99b";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
 }

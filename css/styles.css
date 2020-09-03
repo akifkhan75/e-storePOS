@@ -112,32 +112,80 @@
   .btn-primary:hover {
     background: #c78902; }
 
-.input-group-append {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  background: white;
-  border: solid 1px #bababa;
-  border-radius: 0 .25rem .25rem 0; }
-
-.input-group .form-control {
-  border-right: none;
-  width: 200px;
-  transition: all 0.4s ease-in-out; }
-  .input-group .form-control:focus {
-    width: 300px;
-    box-shadow: none;
-    border-color: #bababa; }
+.input-group {
+  border: solid 1px #545454;
+  border-radius: .25rem; }
+  .input-group-append {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background: white;
+    border-radius: 0 .25rem .25rem 0; }
+  .input-group .form-control {
+    border: none;
+    width: 200px;
+    transition: all 0.4s ease-in-out; }
+    .input-group .form-control:focus {
+      width: 300px;
+      box-shadow: none;
+      border-color: #bababa; }
 
 .card {
   box-shadow: 1px 1px 6px 0px #dad7d7;
   color: #000; }
-  .card-sm {
+  .card-stretched {
+    height: 100%; }
+  .card-sm_header {
+    padding: 5px;
+    border-bottom: 1px solid #ededed; }
+    .card-sm_header .label {
+      font-size: .9rem;
+      font-weight: 500;
+      color: #000;
+      margin-bottom: 0; }
+  .card-sm_body {
     padding: 5px; }
-  .card-md {
+  .card-sm_table {
+    font-size: .9rem;
+    padding: 3px;
+    width: 100%; }
+    .card-sm_table th {
+      font-weight: 500; }
+  .card-sm canvas {
+    max-height: 80px !important; }
+  .card-md_header {
+    padding: 10px;
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
+    .card-md_header .label {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #000;
+      margin-bottom: 0; }
+  .card-md_body {
     padding: 10px; }
-  .card-lg {
+  .card-md_table {
+    font-size: .9rem;
+    width: 100%; }
+    .card-md_table tr {
+      border-bottom: solid 1px #ededed; }
+    .card-md_table td, .card-md_table th {
+      padding: 5px; }
+    .card-md_table th {
+      font-weight: 500; }
+  .card-lg_header {
+    padding: 15px;
+    border-bottom: 1px solid #ededed; }
+    .card-lg_header .label {
+      font-size: .9rem;
+      font-weight: 500;
+      color: #000;
+      margin-bottom: 0; }
+  .card-lg_body {
     padding: 15px; }
 
 .section {
@@ -159,11 +207,6 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: row; }
-  .section .chart-container_sm .chart-label {
-    font-size: .9rem;
-    font-weight: 500;
-    color: #000;
-    margin-bottom: 0; }
   .section .chart-container_sm .chart-result {
     display: flex;
     align-items: center;

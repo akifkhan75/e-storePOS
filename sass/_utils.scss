@@ -19,14 +19,15 @@
 }
 
 .input-group{
+    border: solid 1px darken($grey, 60%);
+    border-radius: .25rem;
     &-append{
         @include flex-justify-center(row);
         background: lighten($text-color, 100%);
-        border: solid 1px darken($grey, 20%);
         border-radius: 0 .25rem .25rem 0;
     }
     .form-control{
-        border-right: none;
+        border: none;
         width: 200px;
         transition: all 0.4s ease-in-out;
         &:focus{
@@ -40,13 +41,78 @@
 .card{
     box-shadow: 1px 1px 6px 0px #dad7d7;
     color: $text-color;
+    &-stretched{
+        height: 100%;
+    }
     &-sm{
-        padding: 5px;
+        &_header{
+            padding: 5px;
+            border-bottom: 1px solid $grey;
+            .label{
+                font-size: .9rem;
+                font-weight: fontWeight(medium);
+                color: $text-color;
+                margin-bottom: 0;
+            }
+        }
+        &_body{
+            padding: 5px;
+        }
+        &_table{
+            font-size: .9rem;
+            padding: 3px;
+            width: 100%;
+            th{
+                font-weight: fontWeight(medium);
+            }
+        }
+        canvas{
+            max-height: 80px !important;
+        }
     }
     &-md{
-        padding: 10px;
+        &_header{
+            padding: 10px;
+            border-bottom: 1px solid $grey;
+            @include flex-justify-center(row);
+            .label{
+                font-size: 1rem;
+                font-weight: fontWeight(medium);
+                color: $text-color;
+                margin-bottom: 0;
+            }
+        }
+        &_body{
+            padding: 10px;
+        }
+        &_table{
+            font-size: .9rem;
+            width: 100%;
+            tr{
+                border-bottom: solid 1px $grey;
+            }
+            td{
+                padding: 5px;
+            }
+            th{
+                @extend td;
+                font-weight: fontWeight(medium);
+            }
+        }
     }
     &-lg{
-        padding: 15px;
+        &_header{
+            padding: 15px;
+            border-bottom: 1px solid $grey;
+            .label{
+                font-size: .9rem;
+                font-weight: fontWeight(medium);
+                color: $text-color;
+                margin-bottom: 0;
+            }
+        }
+        &_body{
+            padding: 15px;
+        }
     }
 }

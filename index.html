@@ -222,59 +222,67 @@
                     <div class="page-contents">
                         <div class="row">
                             <div class="col-sm-3">
-                                <div class="chart-container_sm card card-md">
-                                    <div class="chart-details">
-                                        <p class="chart-label">Weekly Sales</p>
+                                <div class="chart-container_sm card card-sm">
+                                    <div class="card-sm_header">
+                                        <p class="label">Weekly Sales</p>
+                                    </div>
+                                    <div class="card-sm_body chart-details">
                                         <div class="chart-result">
-                                            <h4 class="chart-result_points">45,351</h4>
-                                            <small class="chart-result_status text-success">12%</small>
+                                            <h4 class="chart-result_points">25,351</h4>
+                                            <small class="chart-result_status text-danger"><i class="icon-arrow-down"></i> 9.4%</small>
                                             <small class="chart-result_status-duration text-muted">Since last
                                                 week</small>
                                         </div>
+                                        <canvas class="canvas" id="weeklySaleChart"></canvas>
                                     </div>
-                                    <canvas id="weeklySaleChart"></canvas>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <div class="chart-container_sm card card-md">
-                                    <div class="chart-details">
-                                        <p class="chart-label">Weekly Expenses</p>
+                                <div class="chart-container_sm card card-sm">
+                                    <div class="card-sm_header">
+                                        <p class="label">Weekly Expenses</p>
+                                    </div>
+                                    <div class="card-sm_body chart-details">
                                         <div class="chart-result">
-                                            <h4 class="chart-result_points">45,351</h4>
-                                            <small class="chart-result_status text-success">12%</small>
+                                            <h4 class="chart-result_points">7,695</h4>
+                                            <small class="chart-result_status text-success"><i class="icon-arrow-up"></i> 5.4%</small>
                                             <small class="chart-result_status-duration text-muted">Since last
                                                 week</small>
                                         </div>
+                                        <canvas class="canvas" id="weeklyExpenseChart"></canvas>
                                     </div>
-                                    <canvas id="weeklyExpenseChart"></canvas>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <div class="chart-container_sm card card-md">
-                                    <div class="chart-details">
-                                        <p class="chart-label">Weekly Purchases</p>
+                                <div class="chart-container_sm card card-sm">
+                                    <div class="card-sm_header">
+                                        <p class="label">Weekly Purchases</p>
+                                    </div>
+                                    <div class="card-sm_body chart-details">
                                         <div class="chart-result">
-                                            <h4 class="chart-result_points">45,351</h4>
-                                            <small class="chart-result_status text-success">12%</small>
+                                            <h4 class="chart-result_points">32,800</h4>
+                                            <small class="chart-result_status text-success"><i class="icon-arrow-up"></i> 12.9%</small>
                                             <small class="chart-result_status-duration text-muted">Since last
                                                 week</small>
                                         </div>
+                                        <canvas class="canvas" id="weeklyPurchaseChart"></canvas>
                                     </div>
-                                    <canvas id="weeklyPurchaseChart"></canvas>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <div class="chart-container_sm card card-md">
-                                    <div class="chart-details">
-                                        <p class="chart-label">Weekly Orders</p>
+                                <div class="chart-container_sm card card-sm">
+                                    <div class="card-sm_header">
+                                        <p class="label">Weekly Orders</p>
+                                    </div>
+                                    <div class="card-sm_body chart-details">
                                         <div class="chart-result">
-                                            <h4 class="chart-result_points">45,351</h4>
-                                            <small class="chart-result_status text-success">12%</small>
+                                            <h4 class="chart-result_points">5,231</h4>
+                                            <small class="chart-result_status text-danger"><i class="icon-arrow-down"></i> 17.8%</small>
                                             <small class="chart-result_status-duration text-muted">Since last
                                                 week</small>
                                         </div>
+                                        <canvas class="canvas" id="weeklyOrdersChart"></canvas>
                                     </div>
-                                    <canvas id="weeklyOrdersChart"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -282,22 +290,118 @@
                         <div class="row mt-4 d-flex">
                             <div class="col-sm-6">
                                 <div class="card card-md">
-                                    <canvas id="myChart"></canvas>
+                                    <div class="card-md_header">
+                                        <p class="label">August overview of Sales, Profit & Expense</p>
+                                    </div>
+                                    <div class="card-md_body">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="card card-md">
-                                    <div class="card-header">
-                                        Top Selling Products
+                                <div class="card card-md card-stretched">
+                                    <div class="card-md_header">
+                                        <p class="label">Top Selling Products <small>Monthly</small></p>
+                                        <i class="icon-settings"></i>
                                     </div>
-                                    <div class="card-body">
-                                        <table class="card-table">
+                                    <div class="card-md_body">
+                                        <table class="card-md_table">
                                             <tr>
-                                                <td>Products</td>
-                                                <td>Sold</td>
-                                                <td>Amount</td>
-                                                <td>Stock</td>
-                                                <td>Stock Status</td>
+                                                <th>Products</th>
+                                                <th>Sold</th>
+                                                <th>Amount</th>
+                                                <th>Stock</th>
+                                                <th>Stock Status</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Loreal Hair Color</td>
+                                                <td>
+                                                    <span class="badge badge-success">19</span>
+                                                </td>
+                                                <td>17,300</td>
+                                                <td>11</td>
+                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>TRESemme Pro Collection</td>
+                                                <td>
+                                                    <span class="badge badge-primary">15</span>
+                                                </td>
+                                                <td>23,000</td>
+                                                <td>3</td>
+                                                <td class="text-warning"><i class="icon-alert-triangle"></i> Limited Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Coconut Hair Oil</td>
+                                                <td>
+                                                    <span class="badge badge-success">18</span>
+                                                </td>
+                                                <td>11,170</td>
+                                                <td>0</td>
+                                                <td class="text-danger"><i class="icon-alert-triangle"></i> Out of Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vatika Shampoo</td>
+                                                <td>
+                                                    <span class="badge badge-info">09</span>
+                                                </td>
+                                                <td>7,120</td>
+                                                <td>6</td>
+                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gliss Hair Repair</td>
+                                                <td>
+                                                    <span class="badge badge-success">19</span>
+                                                </td>
+                                                <td>17,300</td>
+                                                <td>11</td>
+                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ginger Shampoo</td>
+                                                <td>
+                                                    <span class="badge badge-success">19</span>
+                                                </td>
+                                                <td>17,300</td>
+                                                <td>11</td>
+                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ponds white beauty</td>
+                                                <td>
+                                                    <span class="badge badge-success">19</span>
+                                                </td>
+                                                <td>17,300</td>
+                                                <td>11</td>
+                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Revlon Hair Color</td>
+                                                <td>
+                                                    <span class="badge badge-success">19</span>
+                                                </td>
+                                                <td>17,300</td>
+                                                <td>11</td>
+                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Just for Men Shampoo</td>
+                                                <td>
+                                                    <span class="badge badge-success">19</span>
+                                                </td>
+                                                <td>17,300</td>
+                                                <td>11</td>
+                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Excellence Creme</td>
+                                                <td>
+                                                    <span class="badge badge-success">19</span>
+                                                </td>
+                                                <td>17,300</td>
+                                                <td>11</td>
+                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
                                             </tr>
                                         </table>
                                     </div>

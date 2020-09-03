@@ -70,59 +70,52 @@ let eStores = {
     charts: function () {
         var ctx = document.querySelector('#myChart');
         var myChart = new Chart(ctx, {
-            type: 'bar',
+            type: 'line',
             data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ["1", "5", "10", "15","20","25","30"],
                 datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
+                    label: 'Sale', // Name the series
+                    data: [500, 50, 430,200,315,150,200], // Specify the data values array
+                    fill: false,
+                    borderColor: '#2196f3', // Add custom color border (Line)
+                    backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+                    borderWidth: 1 // Specify bar border width
+                },{
+                    label: 'Expense', // Name the series
+                    data: [300, 10, 130,300,305,50,60], // Specify the data values array
+                    fill: false,
+                    borderColor: 'rgba(255, 99, 132, 1)', // Add custom color border (Line)
+                    backgroundColor: 'rgba(255, 99, 132, 1)', // Add custom color background (Points and Fill)
+                    borderWidth: 1 // Specify bar border width
+                },{
+                    label: 'Profit', // Name the series
+                    data: [120, 50, 70,180,10,150,100], // Specify the data values array
+                    fill: false,
+                    borderColor: 'rgba(76, 175, 80, 1)', // Add custom color border (Line)
+                    backgroundColor: 'rgba(76, 175, 80, 1)', // Add custom color background (Points and Fill)
+                    borderWidth: 1 // Specify bar border width
                 }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
             }
         });
 
         // weekly sale
-        const weeklySaleChart_ctx = document.querySelector('#weeklySaleChart');
+        let weeklySaleChart_ctx = document.querySelector('#weeklySaleChart');
         new Chart(weeklySaleChart_ctx, {
             type: 'line',
             data: {
-                labels: ["Mon", "Tue", "Wed", "Thu","Fri","Sat"],
+                labels: ["Mon", "Tue", "Wed", "Thu","Fri","Sat","Sun"],
                 datasets: [{
                     label: 'Sale', // Name the series
-                    data: [500, 50, 430,200,315,150], // Specify the data values array
-                    fill: false,
-                    borderColor: '#2196f3', // Add custom color border (Line)
-                    backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+                    data: [500, 50, 430,200,315,150,450], // Specify the data values array
+                    fill: true,
+                    borderColor: 'rgba(33, 150, 243,1)', // Add custom color border (Line)
+                    backgroundColor: 'rgba(33, 150, 243,0.2)', // Add custom color background (Points and Fill)
                     borderWidth: 1 // Specify bar border width
                 }]
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 legend: {
                     display: false
                  },
@@ -136,7 +129,7 @@ let eStores = {
 
                     }],
                     yAxes: [{
-                        display: true,
+                        display: false,
                         scaleLabel: {
                             display: false,
                             labelString: 'Index Returns'
@@ -158,18 +151,19 @@ let eStores = {
         new Chart(weeklyExpenseChart_ctx, {
             type: 'line',
             data: {
-                labels: ["Mon", "Tue", "Wed", "Thu","Fri","Sat"],
+                labels: ["Mon", "Tue", "Wed", "Thu","Fri","Sat","Sun"],
                 datasets: [{
                     label: 'Sale', // Name the series
-                    data: [500, 50, 430,200,315,150], // Specify the data values array
-                    fill: false,
+                    data: [300, 10, 200,100,315,30,200], // Specify the data values array
+                    fill: true,
                     borderColor: 'rgba(255, 99, 132, 1)', // Add custom color border (Line)
-                    backgroundColor: 'rgba(255, 99, 132, 1)', // Add custom color background (Points and Fill)
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)', // Add custom color background (Points and Fill)
                     borderWidth: 1 // Specify bar border width
                 }]
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 legend: {
                     display: false
                  },
@@ -183,7 +177,7 @@ let eStores = {
 
                     }],
                     yAxes: [{
-                        display: true,
+                        display: false,
                         scaleLabel: {
                             display: false,
                             labelString: 'Index Returns'
@@ -205,18 +199,19 @@ let eStores = {
         new Chart(weeklyPurchaseChart_ctx, {
             type: 'line',
             data: {
-                labels: ["Mon", "Tue", "Wed", "Thu","Fri","Sat"],
+                labels: ["Mon", "Tue", "Wed", "Thu","Fri","Sat","Sun"],
                 datasets: [{
                     label: 'Sale', // Name the series
-                    data: [500, 50, 430,200,315,150], // Specify the data values array
-                    fill: false,
+                    data: [490, 210, 230,290,35,90,60], // Specify the data values array
+                    fill: true,
                     borderColor: 'rgba(255, 206, 86, 1)', // Add custom color border (Line)
-                    backgroundColor: 'rgba(255, 206, 86, 1)', // Add custom color background (Points and Fill)
+                    backgroundColor: 'rgba(255, 206, 86, 0.2)', // Add custom color background (Points and Fill)
                     borderWidth: 1 // Specify bar border width
                 }]
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 legend: {
                     display: false
                  },
@@ -230,7 +225,7 @@ let eStores = {
 
                     }],
                     yAxes: [{
-                        display: true,
+                        display: false,
                         scaleLabel: {
                             display: false,
                             labelString: 'Index Returns'
@@ -252,18 +247,19 @@ let eStores = {
         new Chart(weeklyOrdersChart_ctx, {
             type: 'line',
             data: {
-                labels: ["Mon", "Tue", "Wed", "Thu","Fri","Sat"],
+                labels: ["Mon", "Tue", "Wed", "Thu","Fri","Sat","Sun"],
                 datasets: [{
                     label: 'Sale', // Name the series
-                    data: [500, 50, 430,200,315,150], // Specify the data values array
-                    fill: false,
+                    data: [100, 210, 130,280,15,250,300], // Specify the data values array
+                    fill: true,
                     borderColor: 'rgba(153, 102, 255, 1)', // Add custom color border (Line)
-                    backgroundColor: 'rgba(153, 102, 255, 1)', // Add custom color background (Points and Fill)
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)', // Add custom color background (Points and Fill)
                     borderWidth: 1 // Specify bar border width
                 }]
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 legend: {
                     display: false
                  },
@@ -277,7 +273,7 @@ let eStores = {
 
                     }],
                     yAxes: [{
-                        display: true,
+                        display: false,
                         scaleLabel: {
                             display: false,
                             labelString: 'Index Returns'
