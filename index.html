@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E Stores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/vector-icons.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -74,7 +75,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-truck nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Purchases</span>
+                                    <span class="nav-menu_link--text">Purchases</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -90,7 +91,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-how_to_reg nav-menu_link--icon has"></i>
-                                <span class="nav-menu_link--text">Customers</span>
+                                    <span class="nav-menu_link--text">Customers</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -106,10 +107,10 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-user-tie nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Suppliers</span>
+                                    <span class="nav-menu_link--text">Suppliers</span>
                                 </span>
                             </a>
-                            
+
                             <ul class="sub-menu">
                                 <li class="sub-menu-item">
                                     <a href="new-supplier.html" class="sub-menu-link">New Supplier</a>
@@ -123,7 +124,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-assignment nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Stock</span>
+                                    <span class="nav-menu_link--text">Stock</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -139,7 +140,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-pie-chart nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">General Reports</span>
+                                    <span class="nav-menu_link--text">General Reports</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -155,7 +156,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-stats-dots nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Financial Reports</span>
+                                    <span class="nav-menu_link--text">Financial Reports</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -186,7 +187,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-settings nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Settings</span>
+                                    <span class="nav-menu_link--text">Settings</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -217,45 +218,94 @@
                             <button class="btn btn-primary raised"><i class="icon-plus-circle"></i> New</button>
                         </div>
                     </div>
-                    
+
                     <div class="page-contents">
                         <div class="row">
                             <div class="col-sm-3">
-                                <div class="card card-md">
-                                    test
+                                <div class="chart-container_sm card card-md">
+                                    <div class="chart-details">
+                                        <p class="chart-label">Weekly Sales</p>
+                                        <div class="chart-result">
+                                            <h4 class="chart-result_points">45,351</h4>
+                                            <small class="chart-result_status text-success">12%</small>
+                                            <small class="chart-result_status-duration text-muted">Since last
+                                                week</small>
+                                        </div>
+                                    </div>
+                                    <canvas id="weeklySaleChart"></canvas>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <div class="card card-md">
-                                    test
+                                <div class="chart-container_sm card card-md">
+                                    <div class="chart-details">
+                                        <p class="chart-label">Weekly Expenses</p>
+                                        <div class="chart-result">
+                                            <h4 class="chart-result_points">45,351</h4>
+                                            <small class="chart-result_status text-success">12%</small>
+                                            <small class="chart-result_status-duration text-muted">Since last
+                                                week</small>
+                                        </div>
+                                    </div>
+                                    <canvas id="weeklyExpenseChart"></canvas>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <div class="card card-md">
-                                    test
+                                <div class="chart-container_sm card card-md">
+                                    <div class="chart-details">
+                                        <p class="chart-label">Weekly Purchases</p>
+                                        <div class="chart-result">
+                                            <h4 class="chart-result_points">45,351</h4>
+                                            <small class="chart-result_status text-success">12%</small>
+                                            <small class="chart-result_status-duration text-muted">Since last
+                                                week</small>
+                                        </div>
+                                    </div>
+                                    <canvas id="weeklyPurchaseChart"></canvas>
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                                <div class="card card-md">
-                                    test
+                                <div class="chart-container_sm card card-md">
+                                    <div class="chart-details">
+                                        <p class="chart-label">Weekly Orders</p>
+                                        <div class="chart-result">
+                                            <h4 class="chart-result_points">45,351</h4>
+                                            <small class="chart-result_status text-success">12%</small>
+                                            <small class="chart-result_status-duration text-muted">Since last
+                                                week</small>
+                                        </div>
+                                    </div>
+                                    <canvas id="weeklyOrdersChart"></canvas>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row mt-4">
+                        <div class="row mt-4 d-flex">
                             <div class="col-sm-6">
                                 <div class="card card-md">
-                                    test
+                                    <canvas id="myChart"></canvas>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="card card-md">
-                                    test
+                                    <div class="card-header">
+                                        Top Selling Products
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="card-table">
+                                            <tr>
+                                                <td>Products</td>
+                                                <td>Sold</td>
+                                                <td>Amount</td>
+                                                <td>Stock</td>
+                                                <td>Stock Status</td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </section>
                 <!-- /section -->
             </div>
@@ -290,7 +340,9 @@
         </div>
     </div>
     <!-- / mobile nav -->
-
-<script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="js/quagga.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

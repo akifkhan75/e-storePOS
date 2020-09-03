@@ -131,7 +131,7 @@
     border-color: #bababa; }
 
 .card {
-  box-shadow: 2px 2px 6px 1px #ccc;
+  box-shadow: 1px 1px 6px 0px #dad7d7;
   color: #000; }
   .card-sm {
     padding: 5px; }
@@ -159,6 +159,23 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: row; }
+  .section .chart-container_sm .chart-label {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0; }
+  .section .chart-container_sm .chart-result {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+    .section .chart-container_sm .chart-result_points {
+      margin: 0;
+      padding: 0; }
+    .section .chart-container_sm .chart-result_status {
+      padding-left: 10px;
+      font-weight: 500; }
+    .section .chart-container_sm .chart-result_status-duration {
+      padding-left: 10px; }
 
 .page-contents {
   margin-top: 20px; }
@@ -167,17 +184,17 @@
   display: none; }
 
 @media (max-width: 768px) {
-  .nav-button {
+  .header .nav-button {
     display: block; }
   .nav {
     position: absolute;
     left: -200px;
     visibility: hidden;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    z-index: 3; }
     .nav.active {
       left: 0;
       visibility: visible;
-      z-index: 3;
       width: 250px; }
   .mobile-nav {
     display: flex;

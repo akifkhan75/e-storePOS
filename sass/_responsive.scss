@@ -1,5 +1,5 @@
 @include small {
-    .nav-button{
+    .header .nav-button{
         display: block;
     }
     .nav{
@@ -7,10 +7,10 @@
         left: -200px;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
+        z-index: 3;
         &.active{
             left: 0;
             visibility: visible;
-            z-index: 3;
             width: 250px;
         }
     }
