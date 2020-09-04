@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sale | E Stores</title>
+    <title>E Stores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/vector-icons.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -48,13 +49,13 @@
                 <!-- sidebar -->
                 <nav class="nav">
                     <ul class="nav-menu">
-                        <li class="nav-menu_item active">
-                            <a href="index.html" class="nav-menu_link">
+                        <li class="nav-menu_item">
+                            <a href="/index.html" / class="nav-menu_link">
                                 <i class="icon-home nav-menu_link--icon"></i>
                                 <span class="nav-menu_link--text">Dashboard</span>
                             </a>
                         </li>
-                        <li class="nav-menu_item">
+                        <li class="nav-menu_item active">
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-shop nav-menu_link--icon"></i>
@@ -63,7 +64,7 @@
                             </a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item">
-                                    <a href="new-sale.html" class="sub-menu-link">New Sale</a>
+                                    <a href="/new-sale.html" / class="sub-menu-link">New Sale</a>
                                 </li>
                                 <li class="sub-menu-item">
                                     <a href="sales.html" class="sub-menu-link">All Sales</a>
@@ -74,7 +75,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-truck nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Purchases</span>
+                                    <span class="nav-menu_link--text">Purchases</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -90,7 +91,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-how_to_reg nav-menu_link--icon has"></i>
-                                <span class="nav-menu_link--text">Customers</span>
+                                    <span class="nav-menu_link--text">Customers</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -106,10 +107,10 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-user-tie nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Suppliers</span>
+                                    <span class="nav-menu_link--text">Suppliers</span>
                                 </span>
                             </a>
-                            
+
                             <ul class="sub-menu">
                                 <li class="sub-menu-item">
                                     <a href="new-supplier.html" class="sub-menu-link">New Supplier</a>
@@ -123,7 +124,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-assignment nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Stock</span>
+                                    <span class="nav-menu_link--text">Stock</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -139,7 +140,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-pie-chart nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">General Reports</span>
+                                    <span class="nav-menu_link--text">General Reports</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -155,7 +156,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-stats-dots nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Financial Reports</span>
+                                    <span class="nav-menu_link--text">Financial Reports</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -186,7 +187,7 @@
                             <a href="#" class="nav-menu_link has-submenu">
                                 <span>
                                     <i class="icon-settings nav-menu_link--icon"></i>
-                                <span class="nav-menu_link--text">Settings</span>
+                                    <span class="nav-menu_link--text">Settings</span>
                                 </span>
                             </a>
                             <ul class="sub-menu">
@@ -202,26 +203,194 @@
                 </nav>
                 <!-- / sidebar -->
             </div>
-            <div class="col-sm-10">
+            <div class="col-sm-12 col-lg-10">
                 <!-- section  -->
                 <section class="section">
                     <div class="section-header">
                         <h1 class="section-header_title">New Sale</h1>
-                        <!-- <div class="section-header_actions">
-                            <div class="input-group mr-3">
-                                <input type="text" placeholder="Search" class="form-control search-input">
-                                <span class="input-group-append px-2">
-                                    <i class="icon-search"></i>
-                                </span>
-                            </div>
-                            <button class="btn btn-primary raised"><i class="icon-plus-circle"></i> New</button>
-                        </div> -->
                     </div>
-                    
+
                     <div class="page-contents">
-                        <div id="scanner"></div>
+
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="card card-md card-stretched">
+                                    <form action="" class="form form-md">
+                                        <div class="form-group row">
+                                            <div class="col-6 col-md-3">
+                                                <label for="">Invoice #: <strong>3165479</strong></label>
+                                                <input type="text" disabled class="form-control d-none d-sm-block">
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <label for="">Date: <strong>03 Sep 2020</strong></label>
+                                                <input type="text" disabled class="form-control d-none d-sm-block">
+                                            </div>
+                                            <div class="col-12 d-block d-sm-none">
+                                                <hr class="my-1">
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <label for="">Store</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="epharmacy" selected>e pharmacy</option>
+                                                    <option value="estore">e store</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 col-md-3">
+                                                <label for="">Customer</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="epharmacy" selected>Walk in Customer</option>
+                                                    <option value="estore">other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="selling-options mb-3">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <input type="text"
+                                                        placeholder="Search by Code, Item Name & description"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="selling-options_actions d-none d-sm-flex">
+                                                        <button class="btn btn-outline-danger btn-sm"><i
+                                                                class="icon-rotate_left"></i> Discard</button>
+                                                        <button class="btn btn-outline-primary btn-sm"><i
+                                                                class="icon-save"></i> Save Draft</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table card-md_table items-table">
+                                                <tr class="items-table_header">
+                                                    <th>S#</th>
+                                                    <th>Item Code</th>
+                                                    <th>Item Description</th>
+                                                    <th>Price</th>
+                                                    <th>Quantity</th>
+                                                    <th>Total</th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                                <tr class="items-table_row">
+                                                    <td>01</td>
+                                                    <td>3215864</td>
+                                                    <td>Gliss Hair Repair</td>
+                                                    <td>740</td>
+                                                    <td>
+                                                        <input type="text" value="2" size="2" class="form-control w-50">
+                                                    </td>
+                                                    <td><strong>1,480</strong></td>
+                                                    <td><i class="icon-trash-2 text-danger"></i></td>
+                                                </tr>
+                                                <tr class="items-table_row">
+                                                    <td>02</td>
+                                                    <td>4684593</td>
+                                                    <td>Coconut Hair Oil</td>
+                                                    <td>300</td>
+                                                    <td>
+                                                        <input type="text" value="1" size="2" class="form-control w-50">
+                                                    </td>
+                                                    <td><strong>300</strong></td>
+                                                    <td><i class="icon-trash-2 text-danger"></i></td>
+                                                </tr>
+                                                <tr class="items-table_row">
+                                                    <td>03</td>
+                                                    <td>3215486</td>
+                                                    <td>TRESemme Pro Collection</td>
+                                                    <td>890</td>
+                                                    <td>
+                                                        <input type="text" value="1" size="2" class="form-control w-50">
+                                                    </td>
+                                                    <td><strong>890</strong></td>
+                                                    <td><i class="icon-trash-2 text-danger"></i></td>
+                                                </tr>
+                                                <tr class="items-table_row">
+                                                    <td>04</td>
+                                                    <td>3519846</td>
+                                                    <td>Loreal Hair Color</td>
+                                                    <td>1,200</td>
+                                                    <td>
+                                                        <input type="text" value="2" size="2" class="form-control w-50">
+                                                    </td>
+                                                    <td><strong>2,400</strong></td>
+                                                    <td><i class="icon-trash-2 text-danger"></i></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card card-md">
+                                    <div class="card-md_header">
+                                        <p class="label">Summary</p>
+                                    </div>
+                                    <div class="card-md_body">
+                                        <div class="summary">
+                                            <div class="summary-totle">
+                                                <p class="label">Total</p>
+                                                <h4 class="total-amount">
+                                                    5,070<small>.00</small>
+                                                </h4>
+                                            </div>
+                                            <hr>
+                                            <div class="summary-discount">
+                                                <p class="label">Discount</p>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                            data-toggle="dropdown">%</button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">%</a>
+                                                            <a class="dropdown-item" href="#">PKR</a>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" value="5" class="form-control">
+                                                </div>
+                                                <div class="discount-value">
+                                                    <span class="px-2">=</span>
+                                                    <p class="mb-0">253.5</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="summary-receivable">
+                                                <p class="label">Receivable</p>
+                                                <h2 class="total-amount">
+                                                    4,817<small>.00</small>
+                                                </h2>
+                                            </div>
+                                            <hr>
+                                            <div class="summary-payment">
+                                                <p class="label mb-3">Payment</p>
+                                                <div class="d-flex justify-content-between">
+                                                    <select name="" id="" class="form-control mr-2">
+                                                        <option value="" selected>Cash</option>
+                                                        <option value="">Card</option>
+                                                    </select>
+                                                    <input type="text" value="5000" placeholder="Amount" class="form-control ml-2">
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="summary-totle">
+                                                <p class="label">Change</p>
+                                                <h4 class="total-amount">
+                                                    183<small>.00</small>
+                                                </h4>
+                                            </div>
+                                            <hr>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">
+                                                <i class="icon-printer"></i>
+                                                Print
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    
+
                 </section>
                 <!-- /section -->
             </div>
@@ -232,7 +401,7 @@
     <!-- mobile nav -->
     <div class="mobile-nav">
         <div class="d-flex">
-            <a href="index.html" class="nav-item">
+            <a href="/index.html" / class="nav-item">
                 <i class="icon-home"></i>
                 <em class="nav-item_text">Home</em>
             </a>
@@ -241,8 +410,8 @@
                 <em class="nav-item_text">Expense</em>
             </a>
         </div>
-        <a href="new-sale.html" class="nav-item raised">
-            <i class="icon-shop"></i>
+        <a href="/new-sale.html" / class="nav-item raised">
+            <i class="icon-printer"></i>
         </a>
         <div class="d-flex">
             <a href="" class="nav-item">
@@ -256,8 +425,9 @@
         </div>
     </div>
     <!-- / mobile nav -->
-
-<script src="js/quagga.min.js"></script>
-<script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="js/quagga.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

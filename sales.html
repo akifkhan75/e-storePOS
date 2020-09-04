@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Stores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vector-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header light">
+        <div class="d-flex align-items-center">
+            <a href="" class="nav-button">
+                <i class="icon-align-left"></i>
+            </a>
+            <div class="header-logo">
+                e Store
+            </div>
+        </div>
+        <ul class="header-nav">
+            <li class="header-nav_item dropdown">
+                <a href="" class="header-nav_link dropdown-toggle" data-toggle="notifications">
+                    <i class="icon-bell"></i>
+                </a>
+                <div class="dropdown-menu" id="notifications">
+                    <h3>this is a simple dropdown</h3>
+                </div>
+            </li>
+            <li class="header-nav_item">
+                <a href="" class="header-nav_link--current-user">
+                    <i class="icon-user"></i>
+                    <span class="header-nav_link--text">Akif Khan</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- / header -->
+
+    <div class="container-fluid p-0">
+
+        <div class="row no-gutters">
+            <div class="col-sm-2">
+                <!-- sidebar -->
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li class="nav-menu_item">
+                            <a href="/index.html" / class="nav-menu_link">
+                                <i class="icon-home nav-menu_link--icon"></i>
+                                <span class="nav-menu_link--text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-menu_item active">
+                            <a href="#" class="nav-menu_link has-submenu">
+                                <span>
+                                    <i class="icon-shop nav-menu_link--icon"></i>
+                                    <span class="nav-menu_link--text">Sales</span>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="/new-sale.html" / class="sub-menu-link">New Sale</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="sales.html" class="sub-menu-link">All Sales</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu_item">
+                            <a href="#" class="nav-menu_link has-submenu">
+                                <span>
+                                    <i class="icon-truck nav-menu_link--icon"></i>
+                                    <span class="nav-menu_link--text">Purchases</span>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="new-purchase.html" class="sub-menu-link">New Purchase</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="purchases.html" class="sub-menu-link">All Purchases</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu_item">
+                            <a href="#" class="nav-menu_link has-submenu">
+                                <span>
+                                    <i class="icon-how_to_reg nav-menu_link--icon has"></i>
+                                    <span class="nav-menu_link--text">Customers</span>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="new-customer.html" class="sub-menu-link">New customer</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="customers.html" class="sub-menu-link">All customers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu_item">
+                            <a href="#" class="nav-menu_link has-submenu">
+                                <span>
+                                    <i class="icon-user-tie nav-menu_link--icon"></i>
+                                    <span class="nav-menu_link--text">Suppliers</span>
+                                </span>
+                            </a>
+
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="new-supplier.html" class="sub-menu-link">New Supplier</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="suppliers.html" class="sub-menu-link">All Suppliers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu_item">
+                            <a href="#" class="nav-menu_link has-submenu">
+                                <span>
+                                    <i class="icon-assignment nav-menu_link--icon"></i>
+                                    <span class="nav-menu_link--text">Stock</span>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="new-stock.html" class="sub-menu-link">New Stock</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="stock.html" class="sub-menu-link">All Stocks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu_item">
+                            <a href="#" class="nav-menu_link has-submenu">
+                                <span>
+                                    <i class="icon-pie-chart nav-menu_link--icon"></i>
+                                    <span class="nav-menu_link--text">General Reports</span>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="daily-sale-report.html" class="sub-menu-link">Daily Sales Report</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="daily-purchase-report.html" class="sub-menu-link">Daily PUrchase Report</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu_item">
+                            <a href="#" class="nav-menu_link has-submenu">
+                                <span>
+                                    <i class="icon-stats-dots nav-menu_link--icon"></i>
+                                    <span class="nav-menu_link--text">Financial Reports</span>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="daybook.html" class="sub-menu-link">Daybook</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="sale-journal.html" class="sub-menu-link">Sale Journal</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="trial-balance.html" class="sub-menu-link">Trial Balance</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="balance-sheet.html" class="sub-menu-link">Balance Sheet</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="porfit-loss.html" class="sub-menu-link">Profit & Loss</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu_item">
+                            <a href="users-management.html" class="nav-menu_link">
+                                <i class="icon-users nav-menu_link--icon"></i>
+                                <span class="nav-menu_link--text">Users Management</span>
+                            </a>
+                        </li>
+                        <li class="nav-menu_item">
+                            <a href="#" class="nav-menu_link has-submenu">
+                                <span>
+                                    <i class="icon-settings nav-menu_link--icon"></i>
+                                    <span class="nav-menu_link--text">Settings</span>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="general-settings.html" class="sub-menu-link">General Settings</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="notification-settings.html" class="sub-menu-link">Notification Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- / sidebar -->
+            </div>
+            <div class="col-sm-12 col-lg-10">
+                <!-- section  -->
+                <section class="section">
+                    <div class="section-header">
+                        <h1 class="section-header_title">Sales</h1>
+                    </div>
+
+                    <div class="page-contents">
+
+                        // sales table
+
+                    </div>
+
+                </section>
+                <!-- /section -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- mobile nav -->
+    <div class="mobile-nav">
+        <div class="d-flex">
+            <a href="/index.html" / class="nav-item">
+                <i class="icon-home"></i>
+                <em class="nav-item_text">Home</em>
+            </a>
+            <a href="" class="nav-item">
+                <i class="icon-wallet"></i>
+                <em class="nav-item_text">Expense</em>
+            </a>
+        </div>
+        <a href="/new-sale.html" / class="nav-item raised">
+            <i class="icon-shop"></i>
+        </a>
+        <div class="d-flex">
+            <a href="" class="nav-item">
+                <i class="icon-percent"></i>
+                <em class="nav-item_text">Discounts</em>
+            </a>
+            <a href="" class="nav-item">
+                <i class="icon-file-text"></i>
+                <em class="nav-item_text">My Sales</em>
+            </a>
+        </div>
+    </div>
+    <!-- / mobile nav -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="js/quagga.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

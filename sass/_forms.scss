@@ -1,0 +1,20 @@
+.form {
+    &-md{
+        padding: 10px;
+        label{
+            margin-bottom: 0;
+            font-size: .9rem;
+            color: $text-color;
+        }
+        .form-control{
+            height: calc(1.3em + .75rem + 2px);
+            padding: .275rem .35rem;
+            font-size: .9rem;
+            font-weight: fontWeight(regular);
+            line-height: 1;
+            color: $text-color;
+            border: 1px solid lighten($text-color, 30%);
+        }
+    }
+    
+}

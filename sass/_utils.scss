@@ -1,7 +1,9 @@
 .btn{
-    font-size: .9rem;
-    display: flex;
-    align-items: center;
+    &-custom{
+        font-size: .9rem;
+        display: flex;
+        align-items: center;
+    }
     &.raised{
         box-shadow: 1px 1px 3px #ccc;
     }
@@ -18,7 +20,7 @@
     }
 }
 
-.input-group{
+.main-search{
     border: solid 1px darken($grey, 60%);
     border-radius: .25rem;
     &-append{
@@ -151,6 +153,26 @@
         }
         &_body{
             padding: 15px;
+        }
+    }
+    .items-table{
+        &_header{
+            background: darken($grey, 60%);
+            color: lighten($text-color, 100%);
+        }
+        &_row{
+            background: lighten($grey, 5%);
+        }
+        th{
+            padding: 7px 5px;
+            vertical-align: middle;
+        }
+        td{
+            vertical-align: middle;
+            .form-control{
+                height: calc(1.1em + .75rem + 2px);
+                padding: .215rem .305rem;
+            }
         }
     }
 }

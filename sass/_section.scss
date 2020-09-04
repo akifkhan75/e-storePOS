@@ -19,6 +19,51 @@
 
 .page-contents{
     margin-top: 20px;
+    .selling-options{
+        &_actions{
+            display: flex;
+            justify-content: flex-end;
+            .btn{
+                margin-right: 5px;
+            }
+        }
+    }
+    .summary{
+        .label{
+            font-size: 1rem;
+            margin-bottom: 0;
+            font-weight: fontWeight(medium);
+        }
+        &-totle{
+            h4{
+                text-align: center;
+                color: $secondary;
+            }
+        }
+        &-receivable{
+            background: $grey;
+            padding: 5px;
+            h2{
+                text-align: center;
+                color: $primary;
+            }
+        }
+        &-discount{
+            @include flex-justify-center(row);
+            .label{
+                flex-grow: 2;
+            }
+            .input-group{
+                max-width: 110px;
+            }
+            .discount-value{
+                display: flex;
+                justify-content: flex-start;
+                max-width: 170px;
+                font-weight: fontWeight(medium);
+            }
+        }
+    }
 }
 
 .mobile-nav{
