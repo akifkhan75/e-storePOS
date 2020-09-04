@@ -136,6 +136,35 @@
   color: #000; }
   .card-stretched {
     height: 100%; }
+  .card .chart-summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
+  .card .chart-summary_label {
+    font-size: .8rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0; }
+  .card .chart-result {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+    .card .chart-result_points {
+      margin: 0;
+      padding: 0; }
+    .card .chart-result_status {
+      padding-left: 10px;
+      font-weight: 500; }
+    .card .chart-result_status-duration {
+      padding-left: 10px; }
+  .card .chart-details_points {
+    margin: 0;
+    padding: 0; }
+  .card .chart-details_status {
+    font-weight: 500; }
+  .card .chart-details_status-duration {
+    padding-left: 10px; }
   .card-sm_header {
     padding: 5px;
     border-bottom: 1px solid #ededed; }
@@ -207,18 +236,6 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: row; }
-  .section .chart-container_sm .chart-result {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; }
-    .section .chart-container_sm .chart-result_points {
-      margin: 0;
-      padding: 0; }
-    .section .chart-container_sm .chart-result_status {
-      padding-left: 10px;
-      font-weight: 500; }
-    .section .chart-container_sm .chart-result_status-duration {
-      padding-left: 10px; }
 
 .page-contents {
   margin-top: 20px; }
@@ -282,8 +299,14 @@
     align-items: stretch; }
   .card {
     margin-bottom: 1rem; }
-  .card {
-    margin-bottom: 1rem; } }
+    .card .chart-details_status-duration {
+      display: none; }
+    .card .chart-summary_label span {
+      display: none; }
+  .table-responsive {
+    overflow-x: auto; }
+    .table-responsive table {
+      width: 70vh; } }
 
 body {
   padding: 0;

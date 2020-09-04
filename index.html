@@ -50,7 +50,7 @@
                 <nav class="nav">
                     <ul class="nav-menu">
                         <li class="nav-menu_item active">
-                            <a href="/index.html"/ class="nav-menu_link">
+                            <a href="/index.html" / class="nav-menu_link">
                                 <i class="icon-home nav-menu_link--icon"></i>
                                 <span class="nav-menu_link--text">Dashboard</span>
                             </a>
@@ -64,7 +64,7 @@
                             </a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item">
-                                    <a href="/new-sale.html"/ class="sub-menu-link">New Sale</a>
+                                    <a href="/new-sale.html" / class="sub-menu-link">New Sale</a>
                                 </li>
                                 <li class="sub-menu-item">
                                     <a href="sales.html" class="sub-menu-link">All Sales</a>
@@ -229,7 +229,8 @@
                                     <div class="card-sm_body chart-details">
                                         <div class="chart-result">
                                             <h4 class="chart-result_points">25,351</h4>
-                                            <small class="chart-result_status text-danger"><i class="icon-arrow-down"></i> 9.4%</small>
+                                            <small class="chart-result_status text-danger"><i
+                                                    class="icon-arrow-down"></i> 9.4%</small>
                                             <small class="chart-result_status-duration text-muted">Since last
                                                 week</small>
                                         </div>
@@ -245,7 +246,8 @@
                                     <div class="card-sm_body chart-details">
                                         <div class="chart-result">
                                             <h4 class="chart-result_points">7,695</h4>
-                                            <small class="chart-result_status text-success"><i class="icon-arrow-up"></i> 5.4%</small>
+                                            <small class="chart-result_status text-success"><i
+                                                    class="icon-arrow-up"></i> 5.4%</small>
                                             <small class="chart-result_status-duration text-muted">Since last
                                                 week</small>
                                         </div>
@@ -261,7 +263,8 @@
                                     <div class="card-sm_body chart-details">
                                         <div class="chart-result">
                                             <h4 class="chart-result_points">32,800</h4>
-                                            <small class="chart-result_status text-success"><i class="icon-arrow-up"></i> 12.9%</small>
+                                            <small class="chart-result_status text-success"><i
+                                                    class="icon-arrow-up"></i> 12.9%</small>
                                             <small class="chart-result_status-duration text-muted">Since last
                                                 week</small>
                                         </div>
@@ -277,7 +280,8 @@
                                     <div class="card-sm_body chart-details">
                                         <div class="chart-result">
                                             <h4 class="chart-result_points">5,231</h4>
-                                            <small class="chart-result_status text-danger"><i class="icon-arrow-down"></i> 17.8%</small>
+                                            <small class="chart-result_status text-danger"><i
+                                                    class="icon-arrow-down"></i> 17.8%</small>
                                             <small class="chart-result_status-duration text-muted">Since last
                                                 week</small>
                                         </div>
@@ -292,8 +296,41 @@
                                 <div class="card card-md">
                                     <div class="card-md_header">
                                         <p class="label">August overview of Sales, Profit & Expense</p>
+                                        <i class="icon-settings"></i>
                                     </div>
                                     <div class="card-md_body">
+                                        <div class="chart-summary-container">
+                                            <div class="chart-summary">
+                                                <p class="chart-summary_label"><span>This Month</span> Sale</p>
+                                                <div class="chart-details">
+                                                    <h4 class="chart-details_points">55,231</h4>
+                                                    <small class="chart-details_status text-success"><i
+                                                            class="icon-arrow-up"></i> 17.8%</small>
+                                                    <small class="chart-details_status-duration text-muted">Since last
+                                                        week</small>
+                                                </div>
+                                            </div>
+                                            <div class="chart-summary">
+                                                <p class="chart-summary_label"><span>This Month</span> Expense</p>
+                                                <div class="chart-details">
+                                                    <h4 class="chart-details_points">17,600</h4>
+                                                    <small class="chart-details_status text-danger"><i
+                                                            class="icon-arrow-down"></i> 5.3%</small>
+                                                    <small class="chart-details_status-duration text-muted">Since last
+                                                        week</small>
+                                                </div>
+                                            </div>
+                                            <div class="chart-summary">
+                                                <p class="chart-summary_label"><span>This Month</span> Profit</p>
+                                                <div class="chart-details">
+                                                    <h4 class="chart-details_points">29,710</h4>
+                                                    <small class="chart-details_status text-warning"><i
+                                                            class="icon-arrow-up"></i> 3.5%</small>
+                                                    <small class="chart-details_status-duration text-muted">Since last
+                                                        week</small>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <canvas id="myChart"></canvas>
                                     </div>
                                 </div>
@@ -305,105 +342,110 @@
                                         <i class="icon-settings"></i>
                                     </div>
                                     <div class="card-md_body">
-                                        <table class="card-md_table">
-                                            <tr>
-                                                <th>Products</th>
-                                                <th>Sold</th>
-                                                <th>Amount</th>
-                                                <th>Stock</th>
-                                                <th>Stock Status</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Loreal Hair Color</td>
-                                                <td>
-                                                    <span class="badge badge-success">19</span>
-                                                </td>
-                                                <td>17,300</td>
-                                                <td>11</td>
-                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>TRESemme Pro Collection</td>
-                                                <td>
-                                                    <span class="badge badge-primary">15</span>
-                                                </td>
-                                                <td>23,000</td>
-                                                <td>3</td>
-                                                <td class="text-warning"><i class="icon-alert-triangle"></i> Limited Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Coconut Hair Oil</td>
-                                                <td>
-                                                    <span class="badge badge-success">18</span>
-                                                </td>
-                                                <td>11,170</td>
-                                                <td>0</td>
-                                                <td class="text-danger"><i class="icon-alert-triangle"></i> Out of Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Vatika Shampoo</td>
-                                                <td>
-                                                    <span class="badge badge-info">09</span>
-                                                </td>
-                                                <td>7,120</td>
-                                                <td>6</td>
-                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Gliss Hair Repair</td>
-                                                <td>
-                                                    <span class="badge badge-success">19</span>
-                                                </td>
-                                                <td>17,300</td>
-                                                <td>11</td>
-                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ginger Shampoo</td>
-                                                <td>
-                                                    <span class="badge badge-success">19</span>
-                                                </td>
-                                                <td>17,300</td>
-                                                <td>11</td>
-                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ponds white beauty</td>
-                                                <td>
-                                                    <span class="badge badge-success">19</span>
-                                                </td>
-                                                <td>17,300</td>
-                                                <td>11</td>
-                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Revlon Hair Color</td>
-                                                <td>
-                                                    <span class="badge badge-success">19</span>
-                                                </td>
-                                                <td>17,300</td>
-                                                <td>11</td>
-                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Just for Men Shampoo</td>
-                                                <td>
-                                                    <span class="badge badge-success">19</span>
-                                                </td>
-                                                <td>17,300</td>
-                                                <td>11</td>
-                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Excellence Creme</td>
-                                                <td>
-                                                    <span class="badge badge-success">19</span>
-                                                </td>
-                                                <td>17,300</td>
-                                                <td>11</td>
-                                                <td class="text-success"><i class="icon-done"></i> In Stock</td>
-                                            </tr>
-                                        </table>
+                                        <div class="table-responsive">
+                                            <table class="card-md_table">
+                                                <tr>
+                                                    <th>Products</th>
+                                                    <th>Sold</th>
+                                                    <th>Amount</th>
+                                                    <th>Stock</th>
+                                                    <th>Stock Status</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Loreal Hair Color</td>
+                                                    <td>
+                                                        <span class="badge badge-success">19</span>
+                                                    </td>
+                                                    <td>17,300</td>
+                                                    <td>11</td>
+                                                    <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TRESemme Pro Collection</td>
+                                                    <td>
+                                                        <span class="badge badge-primary">15</span>
+                                                    </td>
+                                                    <td>23,000</td>
+                                                    <td>3</td>
+                                                    <td class="text-warning"><i class="icon-alert-triangle"></i> Limited
+                                                        Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Coconut Hair Oil</td>
+                                                    <td>
+                                                        <span class="badge badge-success">18</span>
+                                                    </td>
+                                                    <td>11,170</td>
+                                                    <td>0</td>
+                                                    <td class="text-danger"><i class="icon-alert-triangle"></i> Out of
+                                                        Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vatika Shampoo</td>
+                                                    <td>
+                                                        <span class="badge badge-info">09</span>
+                                                    </td>
+                                                    <td>7,120</td>
+                                                    <td>6</td>
+                                                    <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gliss Hair Repair</td>
+                                                    <td>
+                                                        <span class="badge badge-danger">03</span>
+                                                    </td>
+                                                    <td>1,300</td>
+                                                    <td>10</td>
+                                                    <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ginger Shampoo</td>
+                                                    <td>
+                                                        <span class="badge badge-danger">01</span>
+                                                    </td>
+                                                    <td>3,500</td>
+                                                    <td>6</td>
+                                                    <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ponds white beauty</td>
+                                                    <td>
+                                                        <span class="badge badge-info">06</span>
+                                                    </td>
+                                                    <td>2,420</td>
+                                                    <td>2</td>
+                                                    <td class="text-warning"><i class="icon-done"></i> Limited Stock
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Revlon Hair Color</td>
+                                                    <td>
+                                                        <span class="badge badge-success">07</span>
+                                                    </td>
+                                                    <td>7,500</td>
+                                                    <td>7</td>
+                                                    <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Just for Men Shampoo</td>
+                                                    <td>
+                                                        <span class="badge badge-danger">02</span>
+                                                    </td>
+                                                    <td>1,900</td>
+                                                    <td>0</td>
+                                                    <td class="text-danger"><i class="icon-done"></i> Out of Stock</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Excellence Creme</td>
+                                                    <td>
+                                                        <span class="badge badge-success">19</span>
+                                                    </td>
+                                                    <td>17,300</td>
+                                                    <td>11</td>
+                                                    <td class="text-success"><i class="icon-done"></i> In Stock</td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -420,7 +462,7 @@
     <!-- mobile nav -->
     <div class="mobile-nav">
         <div class="d-flex">
-            <a href="/index.html"/ class="nav-item">
+            <a href="/index.html" / class="nav-item">
                 <i class="icon-home"></i>
                 <em class="nav-item_text">Home</em>
             </a>
@@ -429,7 +471,7 @@
                 <em class="nav-item_text">Expense</em>
             </a>
         </div>
-        <a href="/new-sale.html"/ class="nav-item raised">
+        <a href="/new-sale.html" / class="nav-item raised">
             <i class="icon-shop"></i>
         </a>
         <div class="d-flex">

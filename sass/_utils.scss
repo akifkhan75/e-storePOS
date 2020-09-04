@@ -44,6 +44,44 @@
     &-stretched{
         height: 100%;
     }
+    .chart-summary-container{
+        @include flex-justify-center(row)
+    }
+    .chart-summary_label{
+        font-size: .8rem;
+        font-weight: fontWeight(medium);
+        color: $text-color;
+        margin-bottom: 0;
+    }
+    .chart-result{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &_points{
+            margin: 0;
+            padding: 0;
+        }
+        &_status{
+            padding-left: 10px;
+            font-weight: fontWeight(medium);
+        }
+        &_status-duration{
+            padding-left: 10px;
+        }
+    }
+    .chart-details{
+        // margin-bottom: 10px;
+        &_points{
+            margin: 0;
+            padding: 0;
+        }
+        &_status{
+            font-weight: fontWeight(medium);
+        }
+        &_status-duration{
+            padding-left: 10px;
+        }
+    }
     &-sm{
         &_header{
             padding: 5px;
@@ -116,3 +154,5 @@
         }
     }
 }
+
+

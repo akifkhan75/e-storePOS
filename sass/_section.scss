@@ -15,26 +15,6 @@
             @include flex-justify-center(row);
         }
     }
-
-    .chart-container_sm{
-        
-        .chart-result{
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            &_points{
-                margin: 0;
-                padding: 0;
-            }
-            &_status{
-                padding-left: 10px;
-                font-weight: fontWeight(medium);
-            }
-            &_status-duration{
-                padding-left: 10px;
-            }
-        }
-    }
 }
 
 .page-contents{

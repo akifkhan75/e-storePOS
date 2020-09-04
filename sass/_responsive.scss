@@ -58,10 +58,22 @@
         align-items: stretch;
         
     }
+
     .card{
         margin-bottom: 1rem;
+        .chart-details_status-duration{
+            display: none;
+        }
+        .chart-summary_label span{
+            display: none;
+        }
     }
-    .card{
-        margin-bottom: 1rem;
+
+    .table-responsive{
+        overflow-x: auto;
+        table{
+            width: 70vh;
+        }
     }
 }
+
