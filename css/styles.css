@@ -252,6 +252,40 @@
       align-items: center;
       flex-direction: row; }
 
+.mobile-nav {
+  display: none;
+  background: white;
+  box-shadow: 2px 2px 6px 1px #ccc;
+  padding: 7px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  .mobile-nav .nav-item {
+    color: #000;
+    font-size: 1.2rem;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    .mobile-nav .nav-item_text {
+      font-size: .7rem;
+      line-height: 1.2;
+      font-style: normal; }
+  .mobile-nav .raised {
+    font-size: 2rem;
+    background: #f1a501;
+    color: white;
+    border: 2px solid #ededed;
+    padding: 12px;
+    border-radius: 50px;
+    position: absolute;
+    left: 42%;
+    right: 40%;
+    bottom: 10px;
+    width: 60px;
+    height: 60px; }
+
 .page-contents {
   margin-top: 20px; }
   .page-contents .selling-options_actions {
@@ -324,38 +358,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    background: white;
-    box-shadow: 2px 2px 6px 1px #ccc;
-    padding: 7px;
-    position: fixed;
-    bottom: 0;
-    width: 100%; }
-    .mobile-nav .nav-item {
-      color: #000;
-      font-size: 1.2rem;
-      padding: 0 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column; }
-      .mobile-nav .nav-item_text {
-        font-size: .7rem;
-        line-height: 1.2;
-        font-style: normal; }
-    .mobile-nav .raised {
-      font-size: 2rem;
-      background: #f1a501;
-      color: white;
-      border: 2px solid #ededed;
-      padding: 12px;
-      border-radius: 50px;
-      position: absolute;
-      left: 42%;
-      right: 40%;
-      bottom: 10px;
-      width: 60px;
-      height: 60px; }
+    flex-direction: row; }
+  #scanner {
+    overflow: hidden;
+    height: 150px; }
   .section-header {
     flex-direction: column;
     align-items: stretch; }
@@ -371,6 +377,11 @@
 @media (max-width: 1024px) {
   .header .nav-button {
     display: block; }
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
   .nav {
     position: absolute;
     left: -200px;

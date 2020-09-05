@@ -17,6 +17,41 @@
     }
 }
 
+.mobile-nav{
+    display: none;
+    background: lighten($text-color, 100%);
+    box-shadow: 2px 2px 6px 1px #ccc;
+    padding: 7px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .nav-item{
+        color: $text-color;
+        font-size: 1.2rem;
+        padding: 0 15px;
+        @include flex-justify-center(column);
+        &_text{
+            font-size: .7rem;
+            line-height: 1.2;
+            font-style: normal;
+        }
+    }
+    .raised{
+        font-size: 2rem;
+        background: $secondary;
+        color: lighten($text-color, 100%);
+        border: 2px solid $grey;
+        padding: 12px;
+        border-radius: 50px;
+        position: absolute;
+        left: 42%;
+        right: 40%;
+        bottom: 10px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
 .page-contents{
     margin-top: 20px;
     .selling-options{

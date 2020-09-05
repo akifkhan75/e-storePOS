@@ -213,7 +213,7 @@
                     <div class="page-contents">
 
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-md-12 col-lg-9">
                                 <div class="card card-md card-stretched">
                                     <form action="" class="form form-md">
                                         <div class="form-group row">
@@ -249,7 +249,7 @@
                                                 <div class="col-md-4">
                                                     <input type="text"
                                                         placeholder="Search by Code, Item Name & description"
-                                                        class="form-control">
+                                                        class="form-control mb-3 mb-md-0">
                                                 </div>
                                                 <div class="col-md-8">
                                                     <div class="selling-options_actions d-none d-sm-flex">
@@ -259,9 +259,12 @@
                                                                 class="icon-save"></i> Save Draft</button>
                                                     </div>
                                                 </div>
+                                                <div class="col-12 d-block d-md-none">
+                                                    <div id="scanner" style="overflow:hidden"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="table-responsive">
+                                        <div class="table-responsive d-none d-sm-block">
                                             <table class="table card-md_table items-table">
                                                 <tr class="items-table_header">
                                                     <th>S#</th>
@@ -318,11 +321,41 @@
                                                 </tr>
                                             </table>
                                         </div>
+                                        
                                     </form>
                                 </div>
+                                <div class="mobile-items-list d-block d-sm-none">
+                                    <div class="card card-sm item-card">
+                                        <div class="card-sm_body">
+                                            <table class="">
+                                                <tr>
+                                                    <td>213548</td>
+                                                    <td>740.00/</td>
+                                                    <td>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-secondary" type="button"
+                                                                    data-toggle="dropdown">-</button>
+                                                            </div>
+                                                            <input type="text" value="5" class="form-control">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-secondary" type="button"
+                                                                    data-toggle="dropdown">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="60%" colspan="2">Gliss Hair Repair</td>
+                                                    <td align="center"><strong>1,480</strong></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card card-md">
+                            <div class="col-lg-3">
+                                <div class="card card-md d-none d-lg-block">
                                     <div class="card-md_header">
                                         <p class="label">Summary</p>
                                     </div>
@@ -410,7 +443,7 @@
                 <em class="nav-item_text">Expense</em>
             </a>
         </div>
-        <a href="/new-sale.html" / class="nav-item raised">
+        <a href="#" data-toggle="modal" data-target="#printRecept" class="nav-item raised">
             <i class="icon-printer"></i>
         </a>
         <div class="d-flex">
